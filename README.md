@@ -3,4 +3,4 @@ Browser In Browser is a merged project of mrd0x/BITB and FreeZeroDays/GoPhish-Te
 
 The window design is from Windows 10, if you use dark/light mode the window will adapt. 
 
-Run without download: https://rawcdn.githack.com/aka-Shouta/Browser_in_Browser/2852f2efa28c7fab18669f8fe167d83df0c70027/index.html
+Run without download: https://rawcdn.githack.com/daniseis4/browser-in-the-browser/9402db2313da1ce25daa2974cffb557162d9e6a8/index.html
