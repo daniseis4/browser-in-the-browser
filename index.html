@@ -1,0 +1,30 @@
+<html>
+<head>
+
+</head>
+<body>
+	<script>
+		/* Detect Windows color mode*/
+
+		let mediaQueryObj = window.matchMedia('(prefers-color-scheme: dark)');
+		let usesdarkmode = mediaQueryObj.matches;
+		let usesMacOS = navigator.userAgent.search('Mac')!==-1;
+
+		let destination='';
+		if(usesdarkmode) {
+			if(usesMacOS) {
+				destination = "MacOS-Chrome-DarkMode/index.html";
+			} else {
+				destination = "Windows Dark/index.html";
+			}
+		} else {
+			if(usesMacOS) {
+				destination = "MacOS-Chrome-LightMode/index.html";
+			} else {
+				destination = "Windows Light/index.html";
+			}
+		}
+		window.location.replace(destination);
+	</script>
+</body>
+</html>
